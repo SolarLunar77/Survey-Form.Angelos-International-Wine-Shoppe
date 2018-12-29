@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form: </title>
+</head>
+<style type="">
+
+body {
+	background-color: #ff5050;
+	text-align: center;
+	width: 800px;
+	margin: auto;
+}
+
+#title {
+
+}
+
+h4	{
+	text-align: left;
+	width: 800px;
+	margin: auto;
+}
+
+label {
+	float: left;
+}
+
+#fill-out label, #fill-out-birthday label, #wines-block label {
+	width: 130px;
+	text-align: left;
+} 
+
+input {
+	text-align: left;
+}
+
+#fill-out {
+	text-align: left;
+}
+
+#fill-out-birthday {
+	text-align: left;
+}
+
+#description {
+	text-align: left;
+}
+
+#required {
+	text-align: left;
+}
+
+#survey-form {
+
+}
+
+#dropdown {
+
+}
+
+#gender {
+	margin: auto;
+	width: 800px;
+	text-align: left;
+}
+
+#wines-block {
+	margin: auto;
+	width: 800px;
+	text-align: left;
+}
+
+#wines-list {
+	margin: auto;
+	margin-left: 480px;
+	margin-top: -18px;
+	width: 300px;
+	text-align: left;
+}
+
+textarea {
+	display: block;
+	margin-left: 220px;
+}
+
+#submit {
+	text-align: center;
+}
+
+</style>
+<body>
+<h1 id="title">Angelo's International Wine Shoppe</h1>
+<p id="description">Please fill out our survey form below so that we may learn how to serve you better.</p>
+<p id="required">*Required</p>
+<h4><i>Please note that per U.S. law, we can only sell alcohol to those that are 21 years and older. Also, due to a recent Michigan law, all alchol that is sold to individuals 95 years and over must have a note from their physician indicating no previous health problems.</i></h4>
+<br>
+<div id="fill-out">
+<form id="survey-form">
+	<label for="name-label">*Full Name:</label>
+	<input id="name" type="text" placeholder="Enter your full name" required>
+	<br>
+	<label for="email-label">*Email Address:</label>
+	<input id="email" type="email" placeholder="Enter your email"required>
+	<br>
+	<label for="number-label">*Age:</label>
+	<input id="number" type="number" placeholder="Age" min="21" max="95" required>
+</div>
+<div id="fill-out-birthday">
+	<label for="Birthday" id="dropdown">*Birthday:</label>
+	<select name="Month" required>
+		<option>Month</option>
+		<option>January</option>
+		<option>February</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>August</option>
+		<option>September</option>
+		<option>October</option>
+		<option>November</option>
+		<option>December</option>
+	</select>
+	<select name="Day" required>
+		<option>Day</option>
+		<option>01</option>
+		<option>02</option>
+		<option>03</option>
+		<option>04</option>
+		<option>05</option>
+		<option>06</option>
+		<option>07</option>
+		<option>08</option>
+		<option>09</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+	</select>
+	<select name="Year" required>
+		<option>Year</option>
+		<option>1980</option>
+		<option>1981</option>
+		<option>1982</option>
+		<option>1983</option>
+		<option>1984</option>
+		<option>1985</option>
+		<option>1986</option>
+		<option>1987</option>
+		<option>1988</option>
+		<option>1989</option>
+		<option>1990</option>
+		<option>1991</option>
+		<option>1992</option>
+		<option>1993</option>
+		<option>1994</option>
+		<option>1995</option>
+		<option>1996</option>
+		<option>1997</option>
+		<option>1998</option>
+		<option>1999</option>
+		<option>2000</option>
+		<option>2001</option>
+		<option>2002</option>
+	</select>
+</div>
+<div id="gender">
+	<br>
+	*Select you gender:  <label for="male"></label>
+		<input id="name" name="gender" type="radio" value="MALE" required>Male
+	<label for="female"></label>
+		<input id="name" name="gender" type="radio" value="FEMALE" required>Female
+	<label for="other"></label>
+		<input id="name" name="gender" type="radio" value="OTHER" required>Prefer not to mention
+</div>
+<br>
+<div id="wines-block">
+	*Wines that you would like us to order in the future (Check all that apply):   
+	<br>
+<div id="wines-list">
+	<label for="agreed"></label>
+	<input id="agreed" name="agreed" type="checkbox" value="ONE" required> Dolcetto (Italian red wine)
+	<br>
+	<label for="agreed"></label>
+	<input id="agreed" name="agreed" type="checkbox" value="TWO" required> Burgundy (French white wine)
+	<br>
+	<label for="agreed"></label>
+	<input id="agreed" name="agreed" type="checkbox" value="THREE" required> Bordeaux (French red wine)
+	<br>
+	<label for="agreed"></label>
+	<input id="agreed" name="agreed" type="checkbox" value="FOUR" required> Meijiu (Chinese plum wine)
+	<br>
+	<label for="agreed"></label>
+	<input id="agreed" name="agreed" type="checkbox" value="FIVE" required> Sake (Japanese rice wine)
+</div>
+</div>
+<br>
+<label>Any Comments or Suggestions?</label> <textarea name="paragraph" rows="3" cols="50" placeholder="Please enter your comments here..."></textarea>
+<br>
+<br>
+<input id="submit" type="submit">
+
+
+</body>
+</html>
